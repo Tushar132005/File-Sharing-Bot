@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "e00e5cebf073df8baba7db34ea0ebdc9")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002197836805"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6155478725"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6170050819"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello👋🏻 {mention}\n\nI am YOUTUBER KING 👑 Here to provide you the file for which you are here\n\nOUR OFFICIAL SITE:- studyocean.xy.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6155478725").split()):
+    for x in (os.environ.get("ADMINS", "6155478725 6170050819 5183776660 6928637808").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -52,7 +52,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello👋🏻 {mention}\n\n<b>�
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "False" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "False" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
@@ -61,7 +61,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Bhratashree 😊!!\n\n➡️Aap humare owner nahi hai kripya yaha msg naa kre ye bot sirf owner ki sunta hai kuch puchna hai to iss username pe msg kre @YOUTUBER_KING 🙏\n\nDhanyawad!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6155478725)
+ADMINS.append(6170050819)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
