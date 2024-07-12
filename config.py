@@ -57,6 +57,14 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "False" 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
+from os import environ
+
+API = environ.get("API", "") # shortlink api
+URL = environ.get("URL", "") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
+BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
+VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
+
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Bhratashree 😊!!\n\n➡️Aap humare owner nahi hai kripya yaha msg naa kre ye bot sirf owner ki sunta hai kuch puchna hai to iss username pe msg kre @YOUTUBER_KING 🙏\n\nDhanyawad!"
 
