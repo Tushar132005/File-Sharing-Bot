@@ -21,7 +21,7 @@ from utils import verify_user, check_token, check_verification, get_token
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message)
-data = message.command[1]
+    data = message.command[1]
     if data.split("-", 1)[0] == "verify": # set if or elif it depend on your code
         userid = data.split("-", 2)[1]
         token = data.split("-", 3)[2]
@@ -42,6 +42,7 @@ data = message.command[1]
                 text="<b>Invalid link or Expired link !</b>",
                 protect_content=True
             )
+    
 #othercode#
     id = message.from_user.id
     if not await present_user(id):
