@@ -42,8 +42,6 @@ async def start_command(client: Client, message: Message)
                 text="<b>Invalid link or Expired link !</b>",
                 protect_content=True
             )
-    
-#othercode#
     id = message.from_user.id
     if not await present_user(id):
         try:
